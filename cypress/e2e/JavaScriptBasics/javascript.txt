@@ -85,10 +85,6 @@ GIT Link - https://confluence.atlassian.com/bitbucketserver/basic-git-commands-7
 GITHUB, GIT, GITLAB, CIRCLECI, BITBUCKET - Source Code Managemnent
 -------------------------------------------------------------------
 
-
-
-
-
 git clone https://github.com/ishatesting7/VCypressAutomationNovember2024.git
 
 git status
