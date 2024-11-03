@@ -1,0 +1,90 @@
+Features
+--------
+
+1. Event driven - Callbacks, Promises and Async calls and wait
+2. Async Programming Language
+3. Lightweight 
+4. Cross - platform
+5. import and export - ES 6 Module 
+6. DOM Elements - Document Object Model - BOM - Browser Object Model 
+7. map, filter and reduce array functionality
+8. GC - Garbage Collection 
+
+Installation - Cypress
+----------------------
+node js
+visual studio code
+
+
+Why Cypress?
+
+Cypress
+Pre-requisite - Javascript or Typescript
+Pre-requisite - Stable Environment
+
+Why Cypress?
+1. Easy Installation
+2. Time Travel
+3. Automatic Waiting 
+
+Installation and Setup
+----------------------
+1. Install Node - https://nodejs.org/en/download/prebuilt-installer
+	- To check the version - node -v
+
+2. Install VS Code - https://code.visualstudio.com/download
+
+Why Node JS
+-----------
+
+
+Steps 1
+- Create a new folder and open that same folder via VS Code
+
+Step 2
+- Run the commmand - npm init and write appropriate details and create package.json
+
+Step 3
+- Run the command - npm install cypress --save-dev
+
+Step 4 
+- Run the command - npx cypress open
+
+Folder Structure
+----------------
+
+
+cypress
+	-e2e - All your spec file will be stored at the location
+	-fixture - All your test data will be stored here - (.json, .csv, .txt, .xlsx, .jpeg, .png)
+	-support - (command.js and e2e.js) - will allow you to add the required plugins, dependency
+			 - driver.get("url"); //Navigating to particular url
+			 - cy.visit("url");//Navigating to paricular url 
+			 - visit with visiturl
+
+node_modules - It include various npm dependencies. Even cypress is one of the dependency - npm install cypress --save -dev
+
+cypress.config.js - All the configuration which is require for all the test cases which are present inside e2e folder 				//https://docs.cypress.io/guides/references/configuration
+
+package.lock.json - 
+
+package.json - "devDependencies": 	{
+    								"cypress": "^13.15.0"
+  									}
+  				"Dependency": 		{
+
+  									}
+
+Test Case Creation 
+------------------
+
+
+
+
+GITHUB, GIT, GITLAB, CIRCLECI, BITBUCKET - Source Code Managemnent
+-------------------------------------------------------------------
+
+
+
+
+
