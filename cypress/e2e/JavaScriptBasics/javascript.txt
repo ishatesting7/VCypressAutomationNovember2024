@@ -78,6 +78,7 @@ package.json - "devDependencies": 	{
 Test Case Creation 
 ------------------
 
+GIT Link - https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
 
 
 
@@ -88,3 +89,10 @@ GITHUB, GIT, GITLAB, CIRCLECI, BITBUCKET - Source Code Managemnent
 
 
 
+git clone https://github.com/ishatesting7/VCypressAutomationNovember2024.git
+
+git status
+
+git pull
+
+git rebase
