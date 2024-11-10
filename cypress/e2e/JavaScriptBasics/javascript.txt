@@ -92,3 +92,15 @@ git status
 git pull
 
 git rebase
+
+
+Number of Test Cases 
+Number of Page for the Applications
+Number of Module
+
+Single Module
+
+10 Page
+10 Test Cases
+
+2 Weeks
