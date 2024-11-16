@@ -17,7 +17,6 @@ describe('RadioButton and Checkbox', ()=>{
         cy.wait(2000);
         cy.get(':nth-child(11) > :nth-child(3) > .form-check-label').click();
         cy.get('#tuesday').uncheck({force:true});
-
         cy.wait(5000);
 
         cy.get('[type="checkbox"]').check();
