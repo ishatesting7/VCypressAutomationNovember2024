@@ -94,8 +94,8 @@ git pull
 git rebase
 
 
-Number of Test Cases 
-Number of Page for the Applications
+Number of Test Cases  - 100 + 
+Number of Page for the Applications - 50 
 Number of Module
 
 Single Module
@@ -104,3 +104,31 @@ Single Module
 10 Test Cases
 
 2 Weeks
+
+cy.intercept
+cy.request
+
+API Call - https://petstore.pet.io/post
+Body - {
+	body
+}
+Response - {
+	body
+}
+
+intercept
+Modify your request body
+
+Response - 
+{
+	body 
+}
+
+BurbSuite ZAP -
+--------------
+
+Fuzzing, Intruder, AJAX Spidering
+modify the request -
+
+Pass url 58 Dollar
+modify url with 20 Dollar
