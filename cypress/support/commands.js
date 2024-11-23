@@ -57,3 +57,5 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   
     return findElement(0);
   });
+
+  import 'cypress-file-upload';

@@ -31,6 +31,6 @@ describe('Data Driven', ()=>{
         .wait(1000)
         .invoke('removeAttr','target')
         .click();
-
+        
     })
 })
