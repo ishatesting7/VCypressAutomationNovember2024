@@ -45,7 +45,7 @@ describe('Web Table Operation', ()=>{
         })
     })
 
-    it.only('Count the pages', ()=>{
+    it('Count the pages', ()=>{
 
         cy.get('[href="#collapse4"]').click();
         cy.get('#collapse4 > :nth-child(1) > a').click();
@@ -76,5 +76,45 @@ describe('Web Table Operation', ()=>{
                 cy.wait(2000);
             }
         }
+    })
+
+    const tableData=[];
+
+    it.only('Store all the Table Data', ()=>{
+
+        // cy.get('table[class="table table-bordered table-hover"]>tbody').find('tr')
+        // .then((rows) =>{
+
+        //     const tableData = [];
+        //     rows.each((index, row)=>{
+        //         const rowData = [];
+        //         cy.wrap(row).each((_,cell)={
+        //             rowData.push(cell,inneerText.trim());
+
+        //         })
+        //     })
+        // })
+        cy.get('table[class="table table-bordered table-hover"]>tbody').find('tr')
+        .each(($row)=>{
+            const rowData = [];
+
+            cy.wrap($row).find('td').each(($cell)=>{
+
+                rowData.push($cell.text().trim());
+            })
+            console.log("I AM IN CONSOLE LOG")
+            cy.wrap(rowData).then((data)=>{
+                if(data.length)
+                {
+                    tableData.push(data)
+                }
+                
+            });
+        });
+        console.log("I AM IN CONSOLE LOG AT END ")
+
+        cy.wrap(tableData).then((data)=>{
+            cy.log(JSON.stringify(data));
+        })
     })
 })
